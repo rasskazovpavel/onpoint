@@ -1,0 +1,590 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-container {
+  height: 100vh;
+  display: inline-flex;
+  overflow: hidden;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
+.slide {
+  max-height: 100vh;
+  width: 100vw;
+}
+
+.home button {
+  border: none;
+  background: none;
+}
+
+.home img {
+  width: 153px;
+  margin: 25px 66px;
+}
+
+.hello {
+  height: 387px;
+  position: absolute;
+  left: 70px;
+  top: 173px;
+  z-index: 1;
+}
+
+.next {
+  position: absolute;
+  top: 465px;
+  left: 628px;
+  z-index: 2;
+}
+
+.nextbutton {
+  border: none;
+  background: none;
+}
+
+.next img {
+  margin: 0;
+  height: 80px;
+}
+
+.bact1 {
+  width: 125px;
+  position: relative;
+  bottom: 5px;
+}
+
+@keyframes bact2-animation {
+  0% {
+    top: 60px;
+    left: 745px;
+  }
+  100% {
+    top: 80px;
+    left: 795px;
+  }
+}
+
+.bact2 {
+  height: 57px;
+  position: absolute;
+  animation: bact2-animation 7s alternate infinite ease-in-out;
+}
+
+.bact3 {
+  width: 71px;
+  position: absolute;
+  top: 35px;
+  left: 925px;
+}
+
+.sperm1 {
+  height: 93px;
+  position: absolute;
+  top: 160px;
+  left: 432px;
+  z-index: 2;
+}
+
+@keyframes bact4-animation {
+  0% {
+    top: 200px;
+    left: 862px;
+  }
+  50% {
+    top: 100px;
+    left: 812px;
+  }
+  100% {
+    top: 80px;
+    left: 772px;
+  }
+}
+
+.bact4 {
+  width: 115px;
+  position: absolute;
+  animation: bact4-animation 6s alternate infinite ease-in-out;
+  z-index: 3;
+}
+
+@keyframes bact5-animation {
+  0% {
+    top: 505px;
+    left: 22px;
+  }
+  100% {
+    top: 605px;
+    left: 72px;
+  }
+}
+
+.bact5 {
+  width: 73px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  animation: bact5-animation 8s alternate infinite ease-in-out;
+}
+
+.sperm2 {
+  height: 175px;
+  position: absolute;
+  left: 0px;
+  top: 600px;
+}
+
+.bact6 {
+  width: 85px;
+  position: absolute;
+  left: 353px;
+  top: 637px;
+}
+
+@keyframes bact7-grow {
+  0% {
+    height: 100px;
+  }
+  100% {
+    height: 150px;
+  }
+}
+
+.bact7 {
+  position: absolute;
+  bottom: 0px;
+  left: 540px;
+  animation: bact7-grow 5s alternate infinite ease-in-out;
+}
+
+.onpoint {
+  height: 12px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.onpoint1 {
+  left: 70px;
+}
+
+.onpoint2 {
+  left: 1094px;
+}
+
+.onpoint3 {
+  left: 2114px;
+  z-index: 2;
+}
+
+.slide1 {
+  background-image: url(../images/bg.png);
+  background-size: 1024px 768px;
+}
+
+@keyframes sperms-animation {
+  0% {
+    left: 600px;
+    top: 100px;
+    opacity: 0;
+  }
+  100% {
+    left: 300px;
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+.sperms {
+  width: 766px;
+  position: relative;
+  left: 300px;
+  top: 0px;
+}
+
+.sperm-moving {
+  animation: sperms-animation 3s alternate linear forwards;
+}
+
+.message {
+  position: absolute;
+  width: 181px;
+  bottom: 579px;
+  left: 1094px;
+}
+
+.scroll {
+  position: absolute;
+  direction: rtl;
+  top: 250px;
+  left: 1100px;
+  overflow-y: scroll;
+  width: 850px;
+  height: 426px;
+  text-align: left;
+  background: url(../images/sampletext.png) right no-repeat;
+  background-size: 810px 426px;
+  border-radius: 20px;
+}
+
+.scroll p {
+  font-family: "Istok Web", sans-serif;
+  font-size: 32px;
+  margin-left: 40px;
+  padding: 10px;
+}
+
+#scrollstyle::-webkit-scrollbar {
+  width: 20px;
+}
+
+#scrollstyle::-webkit-scrollbar-track {
+  background-color: #000;
+  border: 8px solid transparent;
+  background-clip: content-box;
+}
+
+#scrollstyle::-webkit-scrollbar-thumb {
+  background: url(../images/thumb.png) center center;
+  border-radius: 10px;
+}
+
+.slide2 {
+  background-image: url(../images/bg2.png);
+  background-size: 1024px 768px;
+}
+
+.bottle {
+  position: absolute;
+  width: 1024px;
+  top: 0px;
+  z-index: 2;
+}
+
+.keymessage {
+  position: absolute;
+  width: 346px;
+  top: 165px;
+  left: 2401px;
+}
+
+.brendxy {
+  position: absolute;
+  height: 67px;
+  left: 2401px;
+  top: 215px;
+}
+
+.lefttext {
+  position: absolute;
+  width: 690px;
+  top: 255px;
+  left: 2124px;
+}
+
+.righttext {
+  position: absolute;
+  width: 500px;
+  top: 246px;
+  left: 2600px;
+}
+
+.details {
+  position: absolute;
+  left: 2726px;
+  bottom: 110px;
+  z-index: 3;
+}
+
+.detailsbutton {
+  border: none;
+  background: none;
+}
+
+.details img {
+  height: 88px;
+  width: 287px;
+}
+
+.cover {
+  position: absolute;
+  top: 123px;
+  right: 61px;
+}
+
+.covered {
+  visibility: hidden;
+}
+
+.closebutton {
+  position: absolute;
+  top: 33px;
+  right: 33px;
+  border: none;
+  background: none;
+}
+
+.closebuttonimg {
+  width: 33px;
+}
+
+.bigbody {
+  height: 573px;
+}
+
+.advantages {
+  top: 47px;
+  left: 212px;
+  position: absolute;
+  height: 118px;
+}
+
+.text1-3 {
+  position: absolute;
+  top: 210px;
+  left: 212px;
+  height: 255px;
+}
+
+.text4-6 {
+  position: absolute;
+  top: 210px;
+  left: 212px;
+  height: 255px;
+  visibility: hidden;
+}
+
+.paging {
+  position: absolute;
+  bottom: 30px;
+  left: 212px;
+  width: 90px;
+  height: 16px;
+}
+
+.paging button {
+  border: none;
+  background: none;
+}
+
+.previous {
+  position: absolute;
+  left: 0px;
+}
+
+.following {
+  position: absolute;
+  right: 0px;
+}
+
+.previousimg,
+.followingimg {
+  width: 50%;
+}
+
+.firstCircle {
+  position: absolute;
+  left: 29px;
+  top: 3px;
+}
+
+.secondCircle {
+  position: absolute;
+  left: 49px;
+  top: 3px;
+}
+
+.firstCircle,
+.secondCircle {
+  width: 11px;
+}
+
+@keyframes bubble1-animation {
+  0% {
+    left: 2126px;
+    top: 212px;
+  }
+  100% {
+    left: 2226px;
+    top: 312px;
+  }
+}
+
+.bubble1 {
+  z-index: 1;
+  position: absolute;
+  width: 34px;
+  animation: bubble1-animation 8s ease-in-out alternate infinite;
+}
+
+@keyframes bubble2-animation {
+  0% {
+    top: 317px;
+    left: 2238px;
+    height: 112px;
+  }
+  33% {
+    top: 267px;
+    left: 2268px;
+    height: 112px;
+  }
+  67% {
+    top: 287px;
+    left: 2308px;
+    height: 152px;
+  }
+  100% {
+    top: 317px;
+    left: 2238px;
+    height: 112px;
+  }
+}
+
+.bubble2 {
+  z-index: 1;
+  position: absolute;
+  animation: bubble2-animation 15s ease-out infinite;
+}
+
+@keyframes bubble3-animation {
+  0% {
+    top: 65px;
+    left: 2243px;
+  }
+  33% {
+    top: 165px;
+    left: 2313px;
+  }
+  67% {
+    top: 85px;
+    left: 2218px;
+  }
+  100% {
+    top: 65px;
+    left: 2243px;
+  }
+}
+
+.bubble3 {
+  z-index: 1;
+  position: absolute;
+  height: 38px;
+  animation: bubble3-animation 15s infinite ease-in-out;
+}
+
+@keyframes bubble4-animation {
+  0% {
+    left: 2290px;
+    top: 605px;
+  }
+  33% {
+    left: 2330px;
+    top: 610px;
+  }
+  67% {
+    left: 2320px;
+    top: 710px;
+  }
+  100% {
+    left: 2290px;
+    top: 605px;
+  }
+}
+
+.bubble4 {
+  z-index: 1;
+  position: absolute;
+  width: 61px;
+  animation: bubble4-animation 15s infinite ease-in-out;
+}
+
+@keyframes bubble5-animation {
+  0% {
+    top: 155px;
+    left: 2232px;
+  }
+  50% {
+    top: 255px;
+    left: 2332px;
+  }
+  100% {
+    top: 205px;
+    left: 2232px;
+  }
+}
+
+.bubble5 {
+  position: absolute;
+  width: 78px;
+  z-index: 2;
+  animation: bubble5-animation 10s linear alternate infinite;
+}
+
+@keyframes bubble6-animation {
+  0% {
+    height: 65px;
+  }
+  100% {
+    height: 90px;
+  }
+}
+
+.bubble6 {
+  position: absolute;
+  bottom: 0px;
+  right: 697px;
+  z-index: 2;
+  animation: bubble6-animation 8s alternate infinite ease-in-out;
+}
+
+@keyframes bubble7-animation {
+  0% {
+    left: 2058px;
+    top: 454px;
+  }
+  100% {
+    left: 2108px;
+    top: 479px;
+  }
+}
+
+.bubble7 {
+  position: absolute;
+  height: 33px;
+  z-index: 2;
+  animation: bubble7-animation 7s infinite alternate ease-in-out;
+}
+
+@keyframes bubble8-animation {
+  0% {
+    height: 75px;
+    left: 2073px;
+    bottom: 139px;
+  }
+  100% {
+    height: 90px;
+    left: 2103px;
+    bottom: 124px;
+  }
+}
+
+.bubble8 {
+  position: absolute;
+  z-index: 2;
+  animation: bubble8-animation 5s alternate infinite ease-in-out;
+}
+
+.slide3 {
+  background-image: url(../images/bg3.png);
+  background-size: 1024px 768px;
+}
